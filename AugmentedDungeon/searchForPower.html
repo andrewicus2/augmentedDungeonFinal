@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+ <head>	
+  <html lang="en">
+  <meta charset="UTF-8">	
+    <title>Augmented Dungeon</title>	
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="scripts.js"></script>
+    <link rel="icon" type="image/png" href="imgs/icon.png">
+  </head>
+  <body onload="loadCheck()">
+    <p>
+      You walk along the length of the fence and quickly encounter an open breaker box, which switches do I need to flip?
+    </p>
+        <img src="imgs/breakerbox.png" style="width:400px">
+
+    <div id="breakerbox">
+      <table id="switches">
+        <tr>
+          <td>
+            <button id="0" onclick="clicked(this.id)"></button>
+          </td>
+          <td>
+            <button id="1" onclick="clicked(this.id)"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button id="2" onclick="clicked(this.id)"></button>
+          </td>
+          <td>
+            <button id="3" onclick="clicked(this.id)"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button id="4" onclick="clicked(this.id)"></button>
+          </td>
+          <td>
+            <button id="5" onclick="clicked(this.id)"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button id="6" onclick="clicked(this.id)"></button>
+          </td>
+          <td>
+            <button id="7" onclick="clicked(this.id)"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button id="8" onclick="clicked(this.id)"></button>
+          </td>
+          <td>
+            <button id="9" onclick="clicked(this.id)"></button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="successMsg"style="display:none;">
+          <p>You hear a hum cut off. <i>Hopefully that's the fence powering down</i></p>
+          <a href="climbFence.html">Climb the Fence</a>
+    </div>
+  </body>
+ </html>
