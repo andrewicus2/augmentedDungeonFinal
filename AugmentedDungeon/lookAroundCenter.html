@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ <head>	
+  <html lang="en">
+  <meta charset="UTF-8">	
+    <title>Augmented Dungeon</title>	
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="scripts.js"></script>
+    <link rel="icon" type="image/png" href="imgs/icon.png">
+    <script>
+      function loadCenterChecker(){
+        if(localStorage.getItem("powerOff")!=0){
+          document.getElementById("onlyWhenPowerOff").style.display="block";
+        }
+        else{
+          document.getElementById("withPower").style.display="block";
+        }
+      }
+    </script>
+  </head>
+  <body onLoad="loadCenterChecker()">
+    <p>
+      You see that each person sitting in a chair is wearing a virtual reality headset and completely slumped over. You decide to walk up to the head that looked familiar.
+    </p>
+    <div id="onlyWhenPowerOff" style="display:none;">
+    <p>
+      You pull the figure upright and rip off their headset to get a better look at the face.
+    </p>
+    <p>
+      You stop. It's like looking in a mirror. You are looking at yourself. The room goes dark.
+    </p>
+  </div>
+    <div id="withPower" style="display:none;">
+      <p>You hear an alarm go off in the distance, footsteps run up behind you. You whip around just in time to see a figure tackle you. Darkness.
+      </p>
+    </div>
+    <a href="endingScreen.html">Continue</a>
+  </body>
+ </html>
